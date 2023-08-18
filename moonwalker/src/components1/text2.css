@@ -1,0 +1,96 @@
+.beenner {
+    margin-top: 0;
+    padding: 260px 0 50px 0;
+    background-image: url('../assets/img/img_2/frontback223.jpg'); /*backgroung img*/
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .beenner .tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 10px;
+    background: linear-gradient(90.21deg, rgba(158, 3, 3, 0.945) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+  .beenner h1 {
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+    background: linear-gradient(to top, rgb(187, 188, 241),rgb(211, 59, 231) ,rgba(226, 5, 5, 0.945));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  .beenner p {
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+  }
+  
+  .beenner #des{
+    color: #fff0f0;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+  }
+  .beenner pre {
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+    padding-left: 40px;
+  }
+  .beenner button {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 60px;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+  }
+  .beenner button svg {
+    font-size: 25px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+    line-height: 1;
+  }
+  .beenner button:hover svg {
+    margin-left: 25px;
+  }
+  .beenner img {
+    animation: updown 3s linear infinite;
+  }
+  @keyframes updown {
+      0% {
+          transform: translateY(-20px);
+      }
+      50% {
+          transform: translateY(20px);
+      }
+      100% {
+          transform: translateY(-20px);
+      }
+  }
+  .txt-rotate > .wrap {
+    border-right: 0.08em solid #666;
+  }
+@media only screen and (min-width: 250px) and (max-width: 350px){
+    .beenner h1 {
+      font-size: 35px;
+      font-weight: 600;
+    }
+    .beenner .tagline{
+      font-size: 15px;
+    }
+  }

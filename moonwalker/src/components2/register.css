@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 50px auto;
+    box-sizing: border-box;
+    
+}
+.register{ 
+    background-color: #010511;
+    background-image: url("../assets/img/color-sharp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 130px 100px 250px ; 
+    width: 100%; 
+    min-height: 50vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.register img{ 
+    height: 100%; 
+    width: 30%; 
+    object-fit: cover; 
+    border-radius: 10px; 
+} 
+.register .form{ 
+    width: 50%; 
+    margin: 30px; 
+} 
+.register .form h1{
+    color: #fff; 
+}
+.register .form .inputBx{ 
+    margin: 10px 0;
+    width: 100%;
+    height: auto; 
+} 
+.register .form .inputBx p{
+    color:#fff; 
+} 
+.register .form .inputBx ol{
+    border: double;
+    border-bottom: none;
+    border-right: none;
+    outline: none; 
+    padding: 10px 10px 10px 25px; 
+    width: 100%;
+    color:#fff; 
+    background: transparent; 
+    min-height: 15px; 
+    font-size: 1.1em; 
+    position: relative;
+    height: 300px;
+    font-size: 16px;
+    overflow-y: scroll;
+} 
+.register .form .inputBx ul{
+    border: none;
+    outline: none; 
+    padding: 10px 10px 10px 25px; 
+    width: 100%;
+    color:#fff; 
+    background: transparent; 
+    min-height: 15px; 
+    font-size: 1.1em; 
+    position: relative;
+    height: 300px;
+    font-size: 16px;
+    overflow-y: scroll;
+} 
+.register .form .inputBx .ol2{
+    border: none;
+    outline: none; 
+    padding: 10px 10px 10px 25px; 
+    width: 100%;
+    color:#fff; 
+    background: transparent; 
+    min-height: 15px; 
+    font-size: 1.1em; 
+    position: relative;
+    height: 300px;
+    font-size: 16px;
+    overflow-y: scroll;
+}
+
+.register .form .inputBx ol li{
+    padding-left: 5px;
+}
+.register .form .btn{
+    padding:5px 0 0 0;
+}
+.register .form .btn a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0;
+    border: 1px solid #1aeeef;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.register .form .btn a:hover{
+    background: linear-gradient(to right, rgb(67, 192, 250),rgb(71, 112, 245));;
+    border: none;
+    color: #050e2d;
+    box-shadow: 0 0 5px #35407e;
+    transition: 0.2s ease-in-out;
+}
+@media only screen and (min-width: 250px) and (max-width: 350px){
+    .register {
+        padding: 230px 30px 250px;
+        display: inline-grid;
+        align-items: flex-start;
+    }
+    .register img {
+        width: 100%;
+    }
+    .register .form {
+        padding-top: 30px;
+        margin: auto;
+        width: 100%;
+    }
+    .register .form .inputBx ol{
+        height: 350px;
+    }
+}
+@media only screen and (min-width: 350px) and (max-width: 550px){
+    .register {
+        padding: 210px 40px 250px;
+        display: inline-grid;
+    }
+    .register img {
+        width: 100%;
+    }
+    .register .form {
+        width: 100%;
+        margin: auto;
+        padding-top: 30px;
+    }
+    .register .form .inputBx ol{
+        height: 400px;
+    }
+
+}
+@media only screen and (min-width: 550px) and (max-width: 800px){
+    .register{
+        padding: 130px 10px 250px;
+    }
+    .register .form h1{
+        font-size: calc(1.3rem + 1.5vw);
+    }
+    .register img {
+        width: 35%;
+    }
+}
+@media only screen and (min-width: 800px) and (max-width: 1000px){
+    .register{
+        padding: 130px 30px 250px;
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1250px){
+    .register{
+        padding: 130px 50px 250px;;
+    }
+}
+@media only screen and (min-width: 1450px) and (max-width: 1750px){
+    .register img {
+        width: 25%;
+    }
+}
+@media only screen and (min-width: 1750px) and (max-width: 2000px){
+    .register img {
+        width: 20%;
+    }
+}
+@media only screen and (min-width: 2000px) and (max-width: 2680px){
+    .register img {
+        width: 15%;
+    }
+}

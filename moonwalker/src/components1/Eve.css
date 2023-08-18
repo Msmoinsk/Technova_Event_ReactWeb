@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.games{
+    padding: 20px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #010511;
+     
+    background-image: url("../assets/img/color-sharp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.games h2{
+    color: #fff;
+    margin :10px 0;
+}
+.games ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.games ul li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+}
+.games ul li.active{
+    background: linear-gradient(to right, rgb(67, 192, 250),rgb(71, 112, 245));
+    color: #050e2d;
+    box-shadow: 0 0 5px #35407e;
+    transition: 0.3s ease-in-out;
+}
+.games .cardBx{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.games .cardBx .card{
+    width: 280px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: #1b2141;
+    overflow: hidden;
+}
+.games .cardBx .card img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.games .cardBx .card .content{
+    padding: 5px;
+}
+.games .cardBx .card .content h4{
+    color: #fff;
+    margin: 15px;
+}
+.games .cardBx .card .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #35407e;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1.5s cubic-bezier(1,0,0.5,1) forwards;
+}
+.games .cardBx .card .progress-line span{
+    position: absolute;
+    height: 100%;
+    width: 200px;
+    border-radius: 10px;
+    background: linear-gradient(to left, rgb(67, 192, 250),rgb(71, 112, 245));
+    box-shadow: 0 0 15px #35407e;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1.5s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+.games .cardBx .card .info{
+    border-top: 2px solid #35407e;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.games .cardBx .card .info p{
+    font-size: 1em;
+    color: #fff;
+}
+.games .cardBx .card .info p span{
+    color: #1aeeef;
+}
+.games .cardBx .card .info a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #1aeeef;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.games .cardBx .card .info a:hover{
+    background: linear-gradient(to right, rgb(67, 192, 250),rgb(71, 112, 245));
+    border: none;
+    color: #050e2d;
+    box-shadow: 0 0 5px #35407e;
+    transition: 0.3s ease-in-out;
+}
+.games .cardBx .card.hide{
+    display: none;
+} 
+@media only screen and (min-width: 350px) and (max-width: 550px){
+    .games{
+        padding: 20px 30px 220px;
+    }
+    .games ul{
+        width: 350px;
+        padding-left: 0;
+    }
+    .games ul li{
+        padding-left: 20px;
+        width: inherit;
+    }
+    .games h2{
+        width: max-content;
+    }
+}
+@media only screen and (min-width: 550px) and (max-width: 1000px){
+    .games{
+        padding: 20px 60px 230px;
+        justify-content: flex-start;
+    }
+    .games ul{
+        width: max-content;
+    }
+    .games .cardBx .card{
+        width: 180px;
+        margin: 10px auto;
+    }
+    .games .cardBx .card .content {
+        padding: 1px;
+        width: inherit;
+    }
+    .games .cardBx .card .progress-line span{
+        width: 130px;
+    }
+    .games .cardBx .card .info{
+        height: 75px;
+        padding: 1px;
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1180px){
+    .games{
+        padding: 20px 40px 240px;
+        justify-content: flex-start;
+    }
+    .games .cardBx .card {
+        width: 250px;
+        margin: 20px 20px;
+    }
+}
+@media only screen and (min-width: 1180px) and (max-width: 1600px){
+    .games{
+        padding: 20px 20px 240px;
+        justify-content: flex-start;
+    }
+}
+@media only screen and (min-width: 250px) and (max-width: 350px){
+    .games{
+        padding: 20px 20px 200px;
+    }
+    .games ul{
+        width: 250px;
+        padding-left: 0;
+    }
+    .games ul li{
+        padding-left: 20px;
+        width: inherit;
+    }
+    .games h2{
+        width: max-content;
+    }
+    .games .cardBx .card{
+        width: 220px;
+        margin: 20px 15px;
+    }
+    .games .cardBx .card .progress-line span{
+        width: 120px;
+    }
+    .games .cardBx .card .info a {
+        padding: 10px 10px;
+    }
+}
